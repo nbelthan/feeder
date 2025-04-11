@@ -97,6 +97,18 @@ SCHEDULE_INTERVAL=2  # Run every 2 hours
 
 The news brief is saved as Markdown in `news_brief.md` (or the path specified in your `.env` file). You can view this file in any Markdown viewer or converter.
 
+### View via Web Interface (Optional)
+
+A simple web application is included to view the *latest* generated news brief directly in your browser. This app reads the most recent brief from the database.
+
+1.  Run the web app:
+    ```bash
+    python web_app.py
+    ```
+2.  Open your web browser and navigate to: `http://localhost:5001` (or `http://0.0.0.0:5001`)
+
+This provides a convenient way to see the most recent output without manually opening the Markdown file.
+
 ## Configuration
 
 Create a `.env` file with the following settings:
